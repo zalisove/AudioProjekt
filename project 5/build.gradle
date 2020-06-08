@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'Test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "https://mvnrepository.com/artifact/org.apache.commons/commons-math3"}
+}
+
+dependencies {
+    compile group: 'edu.cmu.sphinx', name: 'sphinx4-core', version:'5prealpha-SNAPSHOT'
+    compile group: 'edu.cmu.sphinx', name: 'sphinx4-data', version:'5prealpha-SNAPSHOT'
+    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.2'
+}
